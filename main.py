@@ -11,6 +11,7 @@ directories = {
 
 def get_comand():
     dfgdfgfgdfgd
+    dsfgsfgsdfgsdfg
 
 
 
