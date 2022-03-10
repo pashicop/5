@@ -46,6 +46,7 @@ def add_new(n_doc, doc_type, name, n_shelf):
                 break
     return res
 
+
 def delete_user(n_doc):
     res = [False, False]
     for i in documents:
@@ -60,9 +61,10 @@ def delete_user(n_doc):
             break
     return res
 
+
 def move_to_new_shelf_by_n_doc(n_doc, n_shelf):
     res = [False, False, False]
-    if (n_shelf in directories.keys()):
+    if n_shelf in directories.keys():
         res[0] = True
     if res[0]:
         for i in documents:
@@ -82,12 +84,14 @@ def move_to_new_shelf_by_n_doc(n_doc, n_shelf):
                 break
     return res
 
+
 def add_shelf_by_n(n_shelf):
     res = False
-    if (n_shelf not in directories.keys()):
+    if n_shelf not in directories.keys():
         directories[n_shelf] = []
         res = True
     return res
+
 
 def get_comand():
     while True:
